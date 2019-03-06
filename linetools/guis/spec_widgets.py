@@ -1435,7 +1435,7 @@ class MultiSpecWidget(QWidget):
         self.parent.select = chosen
         # Re-init and draw
         # self.parent.init_spec(xlim=self.parent.psdict['x_minmax'], ylim=self.parent.psdict['y_minmax'])
-        self.parent.init_spec(xlim=self.parent.psdict['x_minmax'])
+        self.parent.init_spec()#xlim=self.parent.psdict['x_minmax'])
         self.parent.on_draw()
         # Extra?
         if self.extra_method is not None:
